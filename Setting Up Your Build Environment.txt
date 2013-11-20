@@ -44,20 +44,11 @@ sudo apt-get install git-core gnupg flex bison gperf libsdl1.2-dev libesd0-dev l
 ~Install the repo command
 
 ~Enter the following to download the "repo" binary and make it executable (runnable): 
-  curl https://dl-ssl.google.com/dl/googlesource/git-repo/repo > ~/bin/repo
-  chmod a+x ~/bin/repo
+  curl http://commondatastorage.googleapis.com/git-repo-downloads/repo > ~/bin/repo && chmod a+x ~/bin/repo
 
 ~Put the ~/bin directory in your path of execution
 Make sure that the ~/bin directory you just created is in your path of execution so that you can easily run the repo command even when you're not in ~/bin. Assuming you are using the BASH shell, the default in recent versions of Ubuntu, you can set it like this: 
 
   export PATH=${PATH}:~/bin
-
-~Initialize the ChameleonOS source repository 
-  cd ~/android
-  repo init -u git://github.com/ChameleonOS/android.git -b jellybean-mr2.1
-
-~Download the source code
-
-  repo sync
 
 
