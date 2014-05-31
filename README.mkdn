@@ -31,6 +31,15 @@ java -version
 
 It will show you the default version you are using at that moment.
 
+For Debian we have to use a different method. Each line is a command i nthe terminal.
+su -
+echo "deb http://ppa.launchpad.net/webupd8team/java/ubuntu precise main" > /etc/apt/sources.list.d/webupd8team-java.list
+echo "deb-src http://ppa.launchpad.net/webupd8team/java/ubuntu precise main" >> /etc/apt/sources.list.d/webupd8team-java.list
+apt-key adv --keyserver keyserver.ubuntu.com --recv-keys EEA14886
+apt-get update
+apt-get install oracle-java7-installer
+exit
+
 ---------------------------Now to install tool for compiling android-----------------------------------------------------
 
 Run the following command: 
