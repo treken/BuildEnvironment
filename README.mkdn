@@ -1,12 +1,15 @@
 --------------------------Every command will be initiated from the terminal----------------------------------------------
 
 Installing Sun Java on Newer versions of Ubuntu (10.04 an above), Linux Mint
+
 Open the terminal and type the following:
 
 sudo add-apt-repository ppa:webupd8team/java
 
-sudo apt-get update   
-sudo apt-get upgrade   
+sudo apt-get update
+
+sudo apt-get upgrade 
+
 sudo apt-get install oracle-java6-installer
 
 That should install the Sun Java version on your system. To change to it simply do the following in case you have other java alternatives:
@@ -61,6 +64,7 @@ sudo apt-get install git-core gnupg flex bison gperf libsdl1.2-dev libesd0-dev l
 Now you need to set up your directories :
 
 mkdir -p ~/bin
+
 mkdir -p ~/android
 
 ----------------------------Install the repo command---------------------------------------------------------------------
@@ -70,6 +74,7 @@ Enter the following to download the "repo" binary and make it executable (runnab
 curl http://commondatastorage.googleapis.com/git-repo-downloads/repo > ~/bin/repo && chmod a+x ~/bin/repo
 
 Put the ~/bin directory in your path of execution
+
 Make sure that the ~/bin directory you just created is in your path of execution so that you can easily run the repo command even when you're not in ~/bin. Assuming you are using the BASH shell, the default in recent versions of Ubuntu, you can set it like this: 
  
  export PATH=${PATH}:~/bin
@@ -77,6 +82,7 @@ Make sure that the ~/bin directory you just created is in your path of execution
 -----------------------------Initialize the source repository----------------------------------------------- 
 
 cd ~/android
+
 repo init -u <your source>
 
 Download the source code
